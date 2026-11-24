@@ -1,0 +1,28 @@
+{
+  "title": { "en": "Magpie Gateway", "zh-CN": "Magpie 网关" },
+  "summary": {
+    "en": "Add a Magpie model to OpenFilm’s agent menu.",
+    "zh-CN": "把本机 Magpie 的模型加入 OpenFilm 智能体菜单。"
+  },
+  "details": {
+    "en": "Test a model and add it to the desktop agent menu when you choose. The test sends a generated color tile to the local gateway at 127.0.0.1, which routes it through your Magpie model. The workbench uses OpenFilm’s model settings to save your selection.",
+    "zh-CN": "点「测试并添加」时，会向本机 127.0.0.1 的 Magpie 网关发送一张纯色测试图，由 Magpie 转给你选的模型。测试通过后，工作台通过 OpenFilm 的模型设置保存该模型。"
+  },
+  "needs": {
+    "en": "OpenFilm desktop 0.4.1 and a running Magpie gateway with an image-capable model.",
+    "zh-CN": "需要 OpenFilm 桌面版 0.4.1，以及正在运行且有图像模型的 Magpie 网关。"
+  },
+  "permissions": {
+    "agent": {
+      "scripts": true,
+      "why": {
+        "en": "When requested, read Magpie’s port setting and query the loopback gateway for its model catalog or send the included test image.",
+        "zh-CN": "应用户请求读取 Magpie 的端口设置，查询本机网关的模型目录或发送自带测试图。"
+      }
+    }
+  },
+  "category": "tool",
+  "icon": "workflow",
+  "repository": "https://github.com/cxt888/openfilm-magpie-gateway/tree/main/skills/magpie-gateway",
+  "version": "1.0.0"
+}

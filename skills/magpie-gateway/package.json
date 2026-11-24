@@ -1,0 +1,9 @@
+{
+  "name": "openfilm-magpie-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "browser": "workbench.js",
+  "bin": "gateway.mjs"
+}
